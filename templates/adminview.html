@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .content table .tableheader {
+        background-color: aqua;
+        width: 100%;
+        text-align: center;
+        transition: all 300ms ease;
+      }
+
+      .content table {
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 300ms ease;
+      }
+
+      .content table .btn {
+        size: 5px;
+        margin: 10%;
+        background-color: rgb(213, 142, 142);
+      }
+    </style>
+  </head>
+  <body>
+        <div class="content">
+
+          {% with messages = get_flashed_messages() %}
+
+                        {% if messages %}
+
+                          {% for message in messages %}
+
+                            <div class="alert alert-success alert-dismissable" role="alert">
+                                <button type="button" class="close" data-bs-dismiss="alert" aria-label="close">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                                {{message}}
+
+                            </div>
+
+                          
+
+                          {% endfor %}
+                        {%endif%}
+
+
+
+          {% endwith   %}
+          
+          <table>
+            <tr class="tableheader">
+              <th>Applicant ID</th>
+              <th>Cadidate ID</th>
+              <th>Post Name</th>
+              <th>Full Name</th>
+              <th>Date of Birth</th>
+              <th>Age</th>
+              <th>Email</th>
+              <th>Phone No.</th>
+              <th>Preferences</th>
+              <th>Qualification</th>
+              <th>Degree</th>
+              <th>Specification</th>  
+              <th>Percentage</th>  
+              <th>Designation</th>
+              <th>Qualifying Experience</th>
+              <th>Skills</th>
+              <th>Other Expertise</th>
+              
+
+              
+            </tr>
+           
+            {%for users in userDetails%}
+            <tr>
+              
+                
+                <td>{{users[0]}}</td>
+                <td>{{users[1]}}</td>
+                <td>{{users[2]}}</td>
+                <td>{{users[3]}}</td>
+                <td>{{users[4]}}</td>
+                <td>{{users[5]}}</td>
+                <td>{{users[6]}}</td>
+                <td>{{users[7]}}</td>
+                <td>{{users[8]}}</td>
+                <td>{{users[9]}}</td>
+                <td>{{users[10]}}</td>
+                <td>{{users[11]}}</td>
+                <td>{{users[12]}}</td>
+                <td>{{users[13]}}</td>
+                <td>{{users[14]}}</td>
+                <td>{{users[15]}}</td>
+                <td>{{users[16]}}</td>
+                <!-- <td>
+                  <a href="/admin/view/delete/{{ users[0]}}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a>
+                </td> -->
+                
+               
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

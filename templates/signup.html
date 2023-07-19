@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignuP_page</title>
+    <link rel="icon" type="image/x-icon" href="/static/icons8-user-male-80.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/stylenav.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+
+
+    <style>
+
+        /* body {
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+            font-size: 50;
+        }
+          */
+        /* Styling the area of the slides */
+         
+        #slideshow {
+            overflow: hidden;
+            height: 510px;
+            width: 700px;
+            margin: 0 auto;
+            float: left;
+        }
+         
+        /* Style each of the sides
+        with a fixed width and height */
+         
+        .slide {
+            /* float : left; */
+            margin-top: 150px;
+            margin-left: 100px;
+            height: 510px;
+            width: 700px;
+            display: inline-block;
+        }
+         
+        /* Add animation to the slides */
+         
+        .slide-wrapper {
+             
+            /* Calculate the total width on the
+          basis of number of slides */
+            width: calc(700px * 4);
+             
+            /* Specify the animation with the
+          duration and speed */
+            animation: slide 10s ease infinite;
+        }
+         
+        /* Set the background color
+        of each of the slides */
+         
+        /* .slide:nth-child(1) {
+            background: green;
+        }
+         
+        .slide:nth-child(2) {
+            background: pink;
+        } */
+         
+        .slide:nth-child(3) {
+            background: red;
+        }
+         
+        .slide:nth-child(4) {
+            background: yellow;
+        }
+         
+        /* Define the animation
+        for the slideshow */
+         
+        @keyframes slide {
+             
+            /* Calculate the margin-left for
+          each of the slides */
+            20% {
+                margin-left: 0px;
+            }
+            40% {
+                margin-left: calc(-700px * 1);
+            }
+            60% {
+                margin-left: calc(-700px * 2);
+            }
+            80% {
+                margin-left: calc(-700px * 3);
+            }
+        }
+        *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+nav .logo{
+    width: 20px;
+    height:20px;
+    display: inline;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+    padding:0px 100px;
+    position: fixed;
+    background-color: rgb(0, 4, 5);
+
+     
+}
+/* .logo a{
+    color: rgb(245, 245, 245) ;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    margin-top: 20px; 
+} */
+
+
+nav ul{
+    float: right;
+
+
+    /* font-size: 15px; */
+}
+
+
+nav li{
+    /* font-size: medium; */
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+nav li a{
+
+
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:10px 35px;
+    color: rgb(19, 18, 18) ;
+    text-decoration: none;
+    /* background-color: aliceblue; */
+    text-decoration: solid;
+    color: aliceblue;
+    margin-left: 60px;
+
+    
+
+  
+}
+
+
+.slide{
+    display: inline-block;
+    /* position: relative; */
+   align-self: center;
+    width: 450px;
+    height: 150px;
+}
+
+body{
+    background-color: #babdd7;
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+.container-fluid{
+    width: 100%;
+    background-color:aliceblue;
+    overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* margin-top: auto; */
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+  bottom: 0;
+}
+
+.navbar a:hover {
+  background-color: white;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+ 
+
+
+
+
+
+.top{
+    height: 100px;
+    background-color: #00070b;
+}
+.buttom{
+    background-color: black;
+    height: 40px;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+}
+
+.login_form{
+    /* display: flex; */
+    float: right;
+    margin-top: 150px;
+    margin-right: 150px;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.form{
+    width: 23em;
+    padding:2em;
+    border-radius: 1em;
+    /* box-shadow: 0 10px 25px rgba(90,100,100,.2); */
+    box-shadow: 10px 10px 5px rgb(122, 188, 199);
+}
+
+.form_title{
+    font-weight: 300;
+    margin-bottom: 1.3em;
+}
+
+.form_div{
+    position: relative;
+    height: 3em;
+    margin-bottom: 1.6em;
+}
+
+
+.form_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: .1em solid #dadce0;
+    border-radius: .5em;
+    outline: none;
+    padding: 1em;
+    z-index: 1;
+    background: none;
+}
+
+.form_label{
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    padding: 0 .25em;
+    background-color: #fff;
+    color: #80868b;
+    font-size: 1em;
+    transition: .4s;
+}
+
+.form_button{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 1em 2em;;
+    outline: none;
+    border: none;
+    background-color: rgb(28,164,248);
+    color: #fff;
+    font-size: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 6.3em;
+}
+
+.form_button:hover{
+    transform: scale(0.90);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+}
+
+.form_input:focus + .form_label{
+    top: -.5em;
+    left: .8em;
+    color: rgb(28,164,248);
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
+    top: -.5em;
+    left: .8em;
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input:focus{
+    border: .1em solid rgb(28,164,248);
+}
+
+.login_form #captcha{
+    margin: 15px 0px;
+}
+
+.login_form #captcha .preview{
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    border-radius: 0.5em;
+    margin-bottom: 1.6em;
+
+}
+
+.form_input_captcha {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: 0.1em solid #dadce0;
+    border-radius: 0.5em;
+    outline: none;
+    padding: 1em;
+    z-index: 1;
+    background: none;
+} 
+
+
+.form_label_captcha{
+    position: absolute;
+    left: 1em;
+    top: 5.2em;
+    padding: 0 .25em;
+    background-color: #fff;
+    color: #80868b;
+    font-size: 1em;
+    transition: .4s;
+}
+
+.form_input_captcha:focus + .form_label_captcha{
+    top: 4.7em;
+    left: .8em;
+    color: rgb(28,164,248);
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input_captcha:not(:placeholder-shown).form_input_captcha:not(:focus) + .form_label_captcha{
+    top: 4.6em;;
+    left: .8em;
+    font-size: .80em;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input_captcha:focus{
+    border: .1em solid rgb(28,164,248);
+}
+
+.login_form #captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}
+
+.login_form #captcha .captcha_form{
+    display: flex;
+}
+
+.login_form #captcha .captcha_form input{
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.5em;
+    outline: none; 
+    padding: 1em;
+    z-index: 1;
+    background: none;
+}
+
+
+.login_form #captcha .captcha_form .captcha_refersh{
+    width: 40px;
+    border: none;
+    outline: none;
+    background: #888;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin-left: 5px;
+}
+.captcha_refersh{
+    transition: .4s;
+
+}
+
+.captcha_refersh:hover{
+    transition: .4s;
+
+    transform: scale(0.90);
+}
+        </style>
+  
+
+  <script src="https://kit.fontawesome.com/a7638baec7.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="{{url_for('static', filename='C-DAC_LogoTransp.png')}}" alt="cdac" 
+            width="100px">
+        </div>
+        
+       
+        <ul>
+            <li class="hvr-grow"><a href="https://www.cdac.in/">About Us </a>  </li>
+            <li><a href="https://www.cdac.in/index.aspx?id=contact">Contact </a>  </li>
+            <li><a href="{{url_for('admin')}}">Admin login </a>  </li>
+        
+        </ul>
+    
+    </nav>
+
+    
+
+
+
+
+  
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+         <div class="slide">
+            <img class="d-block w-100" src="{{url_for('static', filename='/images/CDAC-Noida-Campus.webp')}}"  alt="First slide">
+            <h1 class="slide-number">
+              
+            </h1>
+        </div>
+        <div class="slide">
+            <img class="d-block w-100" src="{{url_for('static', filename='/images/cdac-3.jpg')}}"  alt="Second slide">
+            <h1 class="slide-number">
+                <!-- A computer science portal -->
+            </h1>
+        </div>
+        <div class="slide">
+
+            <h1 class="slide-number">
+                <img class="d-block w-100" src="{{url_for('static', filename='/images/pic1.png')}}" alt="Second slide">
+                <!-- This is an example of -->
+            </h1>
+        </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img class="d-block w-100" src="{{url_for('static', filename='C-DAC.jpg')}}" alt="Second slide">
+                    
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="login_form">
+        <form action="{{ url_for('signup') }}" class="form" method="post">
+            <h1 class="form_title"> SIGN-UP </h1>
+            {% if mesage is defined and mesage %}
+            <div class="alert alert-warning">{{ mesage }}</div>
+        {% endif %}
+            
+
+            <div class="form_div">
+                <input type="text" class="form_input" name ="name" placeholder=" " required>
+                <label class="form_label">name</label>
+            </div>
+
+            <div class="form_div">
+                <input type="email" class="form_input" name="email" placeholder=" " required>
+                <label class="form_label">Email</label>
+            </div>
+            <div class="form_div">
+                <input type="password" class="form_input"  name ="password" placeholder=" " required>
+                <label class="form_label"> password</label>
+            </div>
+
+            <div id="captcha" class="form_div">
+                <div class="preview"></div>
+                <div class="captcha_form"> 
+                    <input type="text" id="captcha_form" class="form_input_captcha" placeholder=" ">
+                    <label class="form_label_captcha">Enter Captcha</label>
+                    <button class="captcha_refersh">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+
+            <input type="submit" class="form_button" value="Submit"><br>
+            <p>Already have an account? <a href="{{url_for('login')}}">Login here</a></p> 
+            
+        </form>
+    </div>
+
+
+
+
+    
+
+    <div class="container-fluid border-top">
+
+        <div class="row col-12">
+          <div class="text-center"> <small>
+              <div class="my-3">
+
+
+               <a href="/index.aspx?id=help" class="tab-link-text">Help</a> |
+              <a href="/index.aspx?id=website_policies" class="tab-link-text">Website Policies</a> |
+                <a href="/index.aspx?id=legal_notice#2" class="tab-link-text">Copyright Policy</a> |
+                <a href="/index.aspx?id=terms_conditions" class="tab-link-text">Terms & Conditions</a> |
+              <a href="/index.aspx?id=reach_us" class="tab-link-text">Reach Us</a>
+              </div>
+
+              Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)<br />
+              &copy;
+              <script>                      document.write(new Date().getFullYear())</script> C-DAC. All
+              rights reserved, Last Updated:
+              <span id="lblLastUpdated" class="copyrights"> 2 January , 2023</span>
+
+             
+               <div>
+                <a href="https://www.facebook.com/CDACINDIA/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            
+            
+            <a href="https://twitter.com/cdacindia?lang=en" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            
+            </a>
+            
+            <a href="https://www.youtube.com/channel/UC3dvIHML7V25-KiGf-MzSdw" target="_blank">
+            
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+                
+            
+            </div>
+
+            </small>
+          </div>
+        </div>
+
+
+      </div>
+    
+    <script> (function(){
+        const fonts = ["cursive"];
+        let captchaValue = "";
+        function gencaptcha()
+        {
+            let value = btoa(Math.random()*1000000000);
+            value = value.substr(0,5 + Math.random()*5);
+            captchaValue = value;
+        }
+    
+        function setcaptcha()
+        {
+            let html = captchaValue.split("").map((char)=>{
+                const rotate = -20 + Math.trunc(Math.random()*30);
+                const font = Math.trunc(Math.random()*fonts.length);
+                return`<span
+                style="
+                transform:rotate(${rotate}deg);
+                font-family:${font[font]};
+                "
+               >${char} </span>`;
+            }).join("");
+            document.querySelector(".login_form #captcha .preview").innerHTML = html;
+        }
+    
+        function initCaptcha()
+        {
+            document.querySelector(".login_form #captcha .captcha_refersh").addEventListener("click",function(){
+                gencaptcha();
+                setcaptcha();
+            });
+    
+            gencaptcha();
+            setcaptcha();
+        }
+        initCaptcha();
+    
+        document.querySelector(".login_form .form_button").addEventListener("click",function(){
+            let inputcaptchavalue = document.querySelector(".login_form #captcha input").value;
+    
+            if (inputcaptchavalue === captchaValue) 
+            {
+                // swal("","Log in","success");
+                alert("Log in success");
+            }
+            else
+            {
+                // swal("Invalid Captcha");
+                alert("Invalid Captcha");
+            }
+        });
+    })(); 
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
